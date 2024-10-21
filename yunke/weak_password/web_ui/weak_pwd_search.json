@@ -1,0 +1,8 @@
+[
+  {
+    "search_type": "url",
+    "relation": "等于",
+    "search_content": "//192.168.3.13/vul/csrf/csrfpost/csrf_post_login.php881",
+    "expect": "//192.168.3.13/vul/csrf/csrfpost/csrf_post_login.php881"
+  }
+]

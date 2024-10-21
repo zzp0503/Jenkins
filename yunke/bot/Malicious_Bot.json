@@ -1,0 +1,316 @@
+[
+  {
+    "title": "用例1: sqlmap",
+    "header": {"User-Agent":"sqlmap"},
+     "data":""
+  },
+  {
+    "title": "用例2: 80legs",
+    "header": {"User-Agent":"80legs"},
+     "data":""
+  },
+  {
+    "title": "用例3: Nessus (Header)",
+    "header": {"X-Forwarded-For":"nessus","Referer":"nessus"},
+     "data":""
+  }
+  ,
+  {
+    "title": "用例4: Acunetix",
+    "header": {"Cookie":"acunetix"},
+     "data":""
+  },
+    {
+    "title": "用例5: WebReaver",
+    "header": {"User-Agent":"WebReaver"},
+     "data":""
+  },
+    {
+    "title": "用例6: Webinspect",
+    "header": {"User-Agent":"HP ASC","Cookie":"webinspect"},
+     "data":""
+  },
+    {
+    "title": "用例7: Netsparker",
+    "header": {"X-Scanner":"Netsparker","Accept":"netsparker"},
+     "data":""
+  },
+    {
+    "title": "用例8: WhatWeb Web Application Fingerprint Scanner- Block",
+    "header": {"User-Agent":"WhatWeb"},
+     "data":""
+  },
+    {
+    "title": "用例9: Arachni Scanner- Block",
+    "header": {"User-Agent":"Arachni"},
+     "data":""
+  },
+    {
+    "title": "用例10: CISPA Web Analyzer",
+    "header": {"User-Agent":"CISPA"},
+     "data":""
+  },
+    {
+    "title": "用例11: ChatGPT",
+    "header": {"User-Agent":"ChatGPT"},
+     "data":""
+  },
+    {
+    "title": "用例12: masscan",
+    "header": {"User-Agent":"masscan"},
+     "data":""
+  },
+    {
+    "title": "用例13: Scrapy",
+    "header": {"User-Agent":"Scrapy"},
+     "data":""
+  },
+    {
+    "title": "用例14: Wotbox- Block",
+    "header": {"User-Agent":"Wotbox"},
+     "data":""
+  },
+    {
+    "title": "用例15: Scrapy- Block",
+    "header": {"User-Agent":"Scrapy"},
+     "data":""
+  },
+    {
+    "title": "用例16: Nokia-WAPToolkit.* googlebot",
+    "header": {"User-Agent":"Nokia"},
+     "data":""
+  },
+    {
+    "title": "用例17: niki",
+    "header": {"User-Agent":"niki"},
+     "data":""
+  },
+    {
+    "title": "用例18: jobo",
+    "header": {"User-Agent":"JoBo"},
+     "data":""
+  },
+    {
+    "title": "用例19: immediatenet",
+    "header": {"User-Agent":"immediatenet"},
+     "data":""
+  },
+    {
+    "title": "用例20: Harvest- Block",
+    "header": {"User-Agent":"Harvest"},
+     "data":""
+  },
+    {
+    "title": "用例21: grub crawler",
+    "header": {"User-Agent":"grub"},
+     "data":""
+  },
+    {
+    "title": "用例22: Fetchbot",
+    "header": {"User-Agent":"Fetchbot"},
+     "data":""
+  },
+    {
+    "title": "用例23: Ezooms- Block",
+    "header": {"User-Agent":"Ezooms"},
+     "data":""
+  },
+    {
+    "title": "用例24: DomainStatsBot- Block",
+    "header": {"User-Agent":"DomainStatsBot"},
+     "data":""
+  },
+    {
+    "title": "用例25: Diffbot",
+    "header": {"User-Agent":"Diffbot"},
+     "data":""
+  },
+    {
+    "title": "用例26: Crowsnest",
+    "header": {"User-Agent":"Crowsnest"},
+     "data":""
+  },
+    {
+    "title": "用例27: CRAZYWEBCRAWLER",
+    "header": {"User-Agent":"CRAZYWEBCRAWLER"},
+     "data":""
+  },
+    {
+    "title": "用例28: crawler4j ",
+    "header": {"User-Agent":"crawler4j"},
+     "data":""
+  },
+    {
+    "title": "用例29: Clickagy Intelligence Bot",
+    "header": {"User-Agent":"Clickagy"},
+     "data":""
+  },
+    {
+    "title": "用例30: FlipboardProxy",
+    "header": {"User-Agent":"FlipboardProxy-Block"},
+     "data":""
+  },
+    {
+    "title": "用例31: ContextAd Bot",
+    "header": {"User-Agent":"ContextAd"},
+     "data":""
+  },
+    {
+    "title": "用例32: EBrowse",
+    "header": {"User-Agent":"EBrowse"},
+     "data":""
+  },
+    {
+    "title": "用例33: HuaweiSymantecSpider",
+    "header": {"User-Agent":"HuaweiSymantecSpider"},
+     "data":""
+  },
+    {
+    "title": "用例34: Harvest- Block",
+    "header": {"User-Agent":"Harvest"},
+     "data":""
+  },
+    {
+    "title": "用例35: ScreenerBot",
+    "header": {"User-Agent":"ScreenerBot"},
+     "data":""
+  },
+    {
+    "title": "用例36: squirrobot",
+    "header": {"User-Agent":"squirrobot"},
+     "data":""
+  },
+    {
+    "title": "用例37: Zing-BottaBot- Block",
+    "header": {"User-Agent":"Zing-BottaBot"},
+     "data":""
+  },
+    {
+    "title": "用例38: Nmap Scripting Engine",
+    "header": {"User-Agent":"Nmap"},
+     "data":""
+  },
+    {
+    "title": "用例39: zgrab-Block",
+    "header": {"User-Agent":"zgrab"},
+     "data":""
+  },
+    {
+    "title": "用例40: PhantomJS",
+    "header": {"User-Agent":"PhantomJS"},
+     "data":""
+  },
+    {
+    "title": "用例41: DirBuster- Block",
+    "header": {"User-Agent":"DirBuster"},
+     "data":""
+  },
+    {
+    "title": "用例42: Internet Ninja x.0- Block",
+    "header": {"User-Agent":"Ninja"},
+     "data":""
+  },
+    {
+    "title": "用例43: attache",
+    "header": {"User-Agent":"attache"},
+     "data":""
+  },
+    {
+    "title": "用例44: CherryPicker",
+    "header": {"User-Agent":"CherryPicker"},
+     "data":""
+  },
+    {
+    "title": "用例45: combine- Block",
+    "header": {"User-Agent":"combine"},
+     "data":""
+  },
+    {
+    "title": "用例46: Crescent Internet ToolPak",
+    "header": {"User-Agent":"Crescent"},
+     "data":""
+  },
+    {
+    "title": "用例47: download demon",
+    "header": {"User-Agent":"download"},
+     "data":""
+  },
+    {
+    "title": "用例48: fastlwspider",
+    "header": {"User-Agent":"fastlwspider"},
+     "data":""
+  },
+    {
+    "title": "用例49: MFC_Tear_Sample",
+    "header": {"User-Agent":"MFC_Tear_Sample"},
+     "data":""
+  },
+    {
+    "title": "用例50: mothra",
+    "header": {"User-Agent":"mothra"},
+     "data":""
+  },
+    {
+    "title": "用例51: SiteSnagger",
+    "header": {"User-Agent":"SiteSnagger"},
+     "data":""
+  },
+    {
+    "title": "用例52: Telesoft",
+    "header": {"User-Agent":"Telesoft"},
+     "data":""
+  },
+    {
+    "title": "用例53: big brother",
+    "header": {"User-Agent":"big brother"},
+     "data":""
+  },
+    {
+    "title": "用例54: ContactBot",
+    "header": {"User-Agent":"ContactBot"},
+     "data":""
+  },
+    {
+    "title": "用例55: emailsiphon",
+    "header": {"User-Agent":"emailsiphon"},
+     "data":""
+  },
+    {
+    "title": "用例56: emailwolf",
+    "header": {"User-Agent":"emailwolf"},
+     "data":""
+  },
+    {
+    "title": "用例57: extractorpro",
+    "header": {"User-Agent":"extractorpro"},
+     "data":""
+  },
+    {
+    "title": "用例58: Siege- Block",
+    "header": {"User-Agent":"Siege"},
+     "data":""
+  },
+    {
+    "title": "用例59: Cyberdog",
+    "header": {"User-Agent":"Cyberdog"},
+     "data":""
+  },
+    {
+    "title": "用例60: Apache Struts Dynamic Method Invocation",
+    "data": {"cmd":"setExcludedClasses"},
+    "header": ""
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

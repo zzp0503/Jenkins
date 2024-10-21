@@ -1,0 +1,921 @@
+[
+{
+    "type":1,
+    "title":"用例1：测试新增弱口令防护规则，规则是否是否会生效（登录密码长度小于规则配置的长度，使用post请求json传参格式）",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":false,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"success",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+        "username":"A2root",
+        "password":"12@@As",
+        "username2":"string",
+        "password2":"string"
+    },
+    "expect":405
+},
+    {
+    "type":4,
+    "title":"用例2：测试新增弱口令防护规则，规则是否是否会生效（登录密码长度等于规则配置的长度）",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+        "username":"BroSot",
+        "password":"1@3S5..",
+        "username2":"string",
+        "password2":"string"
+    },
+    "expect":200
+},
+    {
+    "type":4,
+    "title":"用例3：测试新增弱口令防护规则，规则是否是否会生效（登录密码长度大于规则配置的长度）",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+        "username":"rSoot",
+        "password":"1234@6.a",
+        "username2":"string",
+        "password2":"string"
+    },
+    "expect":200
+},
+    {
+    "type":2,
+    "title":"用例4：测试将规则检测配置修改为字母单配置，规则是否会生效（请求参数中不携带字母）",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":false,
+            "letter":true,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"info",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+  "username": "ro1ot",
+  "password": "1@#45678",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+
+    {
+    "type":4,
+    "title":"用例5：测试将规则检测配置修改为字母单配置，规则是否会生效（请求参数中携带小写字母）",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+        "username":"roRot22",
+        "password":"12qwe215@",
+        "username2":"string",
+        "password2":"string"
+    },
+    "expect":200
+},
+    {
+    "type":4,
+    "title":"用例6：测试将规则检测配置修改为字母单配置，规则是否会生效（请求参数中携带大写字母）",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "roASot",
+  "password": "1@ASS5678",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":200
+},
+    {
+    "type":2,
+    "title":"用例7：测试将规则检测配置修改为大写字母单配置，规则是否会生效（请求参数中携带小写字母）",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":true,
+            "lower":false,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"aaa bbb ccc",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+  "username": "roDot",
+  "password": "1@#4s5s6.8",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+    {
+    "type":4,
+    "title":"用例8：测试将规则检测配置修改为大写字母单配置，规则是否会生效（请求参数中携带大写字母）",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "roXot",
+  "password": "1@SSBa5678",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":200
+},
+    {
+    "type":2,
+    "title":"用例9：测试将规则检测配置修改为小写字母单配置，规则是否会生效（请求参数中不携带小写字母）",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":true,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"ds2222,eew,success",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+  "username": "rDDoot",
+  "password": "1@#4SP678",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+    {
+    "type":4,
+    "title":"用例10：测试将规则检测配置修改为小写字母单配置，规则是否会生效（请求参数中携带小写字母）",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "roYYot",
+  "password": "1@SSa5678",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":200
+},
+    {
+    "type":2,
+    "title":"用例11：测试将规则检测配置修改为数字单配置，规则是否会生效（请求参数中不携带数字）",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":true,
+            "upper":false,
+            "lower":false,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"success",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+  "username": "ro.ot",
+  "password": "!@##SDss",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+    {
+    "type":4,
+    "title":"用例12：测试将规则检测配置修改为数字单配置，规则是否会生效（请求参数中携带数字）",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "ro@ot",
+  "password": "1@SSa52678",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":200
+},
+    {
+    "type":2,
+    "title":"用例13：测试将规则检测配置修改为特殊符号单配置，规则是否会生效（请求参数中不携带特殊符号）",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":false,
+            "letter":false,
+            "punctuation":true,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"success",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+  "username": "r##oot",
+  "password": "s2115Dss",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+    {
+    "type":4,
+    "title":"用例14：测试将规则检测配置修改为特殊符号单配置，规则是否会生效（请求参数中携带特殊符号）",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "DSA!#",
+  "password": "1@！S@$a7..8",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":200
+},
+    {
+    "type":2,
+    "title":"用例15：测试将规则检测配置修改为账号与密码相同单配置，规则是否会生效（请求参数中参数账号与密码不相同）",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":false,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":true,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"success",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+  "username": "rooDDt11",
+  "password": "s21d15Ds1s",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":200
+},
+    {
+    "type":4,
+    "title":"用例16：测试将规则检测配置修改为账号与密码相同单配置，规则是否会生效（请求参数中参数账号与密码相同）",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "1@SS@@#$a7822",
+  "password": "1@SS@@#$a7822",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+    {
+    "type":2,
+    "title":"用例17：测试将规则检测配置修改为连续字符检测单配置，规则是否会生效（请求参数中参数密码为连续字符）——密码1：abcdefg",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":false,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":true
+        },
+        "identify_code":200,
+        "identify_key_word":"success",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+  "username": "1@SS@@#$a78",
+  "password": "abcdefg",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+    {
+    "type":4,
+    "title":"用例18：测试将规则检测配置修改为连续字符检测单配置，规则是否会生效（请求参数中参数密码为连续字符）——密码2：GFEDCBA",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "1@SS@@#$a78",
+  "password": "GFEDCBA",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+    {
+    "type":4,
+    "title":"用例19：测试将规则检测配置修改为连续字符检测单配置，规则是否会生效（请求参数中参数密码为连续字符）——密码3：012yds9",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "1@SS@@#$a78",
+  "password": "012yds9",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+    {
+    "type":4,
+    "title":"用例20：测试将规则检测配置修改为连续字符检测单配置，规则是否会生效（请求参数中参数密码为连续字符）——密码4:sd765y5",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "1@SS@@#$a78",
+  "password": "sd765y5",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+    {
+    "type":4,
+    "title":"用例21：测试将规则检测配置修改为连续字符检测单配置，规则是否会生效（请求参数中参数密码为连续字符）——密码5:adCDeYG",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "1@SS@@#$a78",
+  "password": "adCDeYG",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+
+    {
+    "type":4,
+    "title":"用例22：测试将规则检测配置修改为连续字符检测单配置，规则是否会生效（请求参数中参数密码为连续字符）——密码6:g1Edc1a..",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "1@SS@@#$a78",
+  "password": "g1Edc1a..",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+  {
+    "type":4,
+    "title":"用例23：测试将规则检测配置修改为连续字符检测单配置，规则是否会生效（请求参数中参数密码为连续字符）——密码7:5!666#29",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "1@SS@@#$a78",
+  "password": "5!666#29",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+      {
+    "type":4,
+    "title":"用例24：测试将规则检测配置修改为连续字符检测单配置，规则是否会生效（请求参数中参数密码为连续字符）——密码8:5!AAa#29",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "1@SS@@#$a78",
+  "password": "5!AAa#29",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+         {
+    "type":4,
+    "title":"用例25：测试将规则检测配置修改为连续字符检测单配置，规则是否会生效（请求参数中参数密码为连续字符）——密码8:5!A861...",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "1@SS@@#$a78",
+  "password": "5!A861...",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+    {
+    "type":4,
+    "title":"用例26：测试将规则检测配置修改为连续字符检测单配置，规则是否会生效（请求参数中参数密码不为连续字符,密码为：17161413）",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "rooUYt",
+  "password": "17161413",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":200
+},
+    {
+    "type":2,
+    "title":"用例27：测试将规则修改为多配置，规则是否会生效（特殊字符 + 数字 + 大写字母 + 小写字母——请求参数中包含）",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":true,
+            "upper":true,
+            "lower":true,
+            "letter":false,
+            "punctuation":true,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"success",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+  "username": "roDSot",
+  "password": "s215Ds！#s",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":200
+},
+    {
+    "type":2,
+    "title":"用例28：测试将规则修改为多配置，规则是否会生效（特殊字符 + 数字 + 字母——请求参数中包含）",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":true,
+            "upper":false,
+            "lower":false,
+            "letter":true,
+            "punctuation":true,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"success",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+  "username": "rDS99oot",
+  "password": "s2115Ds！#s",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":200
+},
+    {
+    "type":2,
+    "title":"用例29：测试修改规则用户名参数，规则是否生效（请求参数中不存在配置的用户名参数，请求密码参数小于7位）",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username88888",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":false,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"success",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+  "username": "roWQEQot",
+  "password": "s2Y115",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+    {
+    "type":2,
+    "title":"用例30：测试修改规则密码参数，规则是否生效（请求参数中不存在配置的密码参数，请求密码参数小于7位）",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password888",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":false,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"success",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+  "username": "roo11t",
+  "password": "s2Q115",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":200
+},
+    {
+    "type":2,
+    "title":"用例31：测试将加密方式修改为base64加密，规则是否会生效（请求密码参数数据为6位数base64加密数据）",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":2,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":false,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"success",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+  "username": "rSDA2oot",
+  "password": "MTIzNDU2",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+    {
+    "type":4,
+    "title":"用例32：测试将加密方式修改为base64加密，规则是否会生效（请求密码参数数据为：8989555 base64加密数据）",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "ro1DXot",
+  "password": "ODk4OTU1NQ==",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":200
+},
+    {
+    "type":4,
+    "title":"用例29：测试将加密方式修改为base64加密，规则是否会生效（请求密码参数数据为未加密7位数数据）",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "roo8..t",
+  "password": "s211P68",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+    {
+    "type":2,
+    "title":"用例33：测试将加密方式修改为MD5加密，规则是否会生效（请求密码参数数据为 123456 MD5加密数据）",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":3,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":false,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"success",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+  "username": "roDDCot",
+  "password": "e10adc3949ba59abbe56e057f20f883e",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":405
+},
+     {
+    "type":4,
+    "title":"用例34：测试将加密方式修改为MD5加密，规则是否会生效（请求密码参数数据为 654321 使用base64加密数据）",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "rooZXt",
+  "password": "NjU0MzIx",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":200
+},
+    {
+    "type":4,
+    "title":"用例35：测试将加密方式修改为MD5加密，规则是否会生效（请求密码参数数据 123456 未加密数据）",
+    "weak_pwd_url":"/weak_pwd1",
+    "weak_data":{
+  "username": "roXFot",
+  "password": "123...",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":200
+},
+    {
+    "type":2,
+    "title":"用例36：测试修改规则响应码，规则是否生效（请求得到的响应码与规则配置的响应码不匹配——请求密码参数数据为未加密6位数数据）",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":false,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":500,
+        "identify_key_word":"success",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+  "username": "ro$ot",
+  "password": "456111",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":200
+},
+    {
+    "type":2,
+    "title":"用例37：修改特征字符，规则是否生效（请求得到的特征字符与规则配置的特征字符不匹配—请求密码参数数据为未加密6位数数据）",
+    "weak_pwd_url":"/weak_pwd1",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":false,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"successdaas",
+        "url":"/weak_pwd1",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data":{
+  "username": "roDGot",
+  "password": "456711",
+  "username2": "string",
+  "password2": "string"
+},
+    "expect":200
+},
+    {
+    "type":2.1,
+    "title":"用例38：测试修改url为根目录，规则是否会生效（使用get请求）",
+    "weak_pwd_url":"/",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":false,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"success",
+        "url":"/",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+      "weak_data": {"username":"admin123","password": 128456},
+    "expect":405
+},
+        {
+    "type":2.1,
+    "title":"用例39：测试关闭规则后，规则是否会生效（请求密码参数数据为未加密6位数数据）",
+    "weak_pwd_url":"/",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":false,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"success",
+        "url":"/",
+        "status":false,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+          "weak_data": {"username":"admin123..","password": 129456},
+    "expect":200
+},
+            {
+    "type":2.1,
+    "title":"用例40：测试重复开启规则后，规则是否会生效（请求密码参数数据为未加密6位数数据）",
+    "weak_pwd_url":"/",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":false,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"success",
+        "url":"/",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+    "weak_data": {"username":"admin666@","password": 234456},
+    "expect":405
+},
+     {
+    "type":2.2,
+    "title":"用例41：测试使用post请求from表单格式传参，规则是否会生效（请求密码参数数据为未加密6位数数据）",
+    "weak_pwd_url":"/weak_pwd3",
+    "rule_data":{
+        "account_field":"username",
+        "password_field":"password",
+        "encrypt_type":1,
+        "match":{
+            "len":7,
+            "num":false,
+            "upper":false,
+            "lower":false,
+            "letter":false,
+            "punctuation":false,
+            "name_pwd_equal":false,
+            "continuous_char":false
+        },
+        "identify_code":200,
+        "identify_key_word":"success",
+        "url":"/weak_pwd3",
+        "status":true,
+        "action":200,
+        "description":"弱口令监测测试"
+    },
+         "weak_data":{
+      "username": "1381282815",
+      "password": "qq7756"
+    },
+    "expect":405
+},
+         {
+    "type":3,
+    "title":"用例42：测试删除规则后，规则是否还生效（请求密码参数数据为未加密6位数数据）",
+    "weak_pwd_url":"/weak_pwd3",
+         "weak_data":{
+      "username": "root@123",
+      "password": "126656"
+    },
+    "expect":200
+}
+]

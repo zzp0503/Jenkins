@@ -1,0 +1,36 @@
+[
+  {
+    "title": "用例1: baidu",
+    "header": {"User-Agent":"Mozilla/5.0 (Linux;u;Android 4.2.2;zh-cn;) AppleWebKit/534.46 (KHTML,like Gecko) Version/5.1 Mobile Safari/10600.6.3 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)\", \"Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)"}
+  },
+  {
+    "title": "用例2: Ask",
+    "header": {"User-Agent":"Ask Jeeves","X-REAL-IP":"192.168.3.66"}
+  },
+  {
+    "title": "用例3: Baidu",
+    "header": {"User-Agent":"Baiduspider","X-REAL-IP":"36.106.22.5"}
+  },
+  {
+    "title": "用例4: Bing",
+    "header": {"User-Agent":"BUbiNG","X-REAL-IP":"1.32.232.0"}
+  }
+  ,
+  {
+    "title": "用例5: BingPreview",
+    "header": {"User-Agent":"BingPreview","X-REAL-IP":"1.179.112.5"}
+  },
+    {
+    "title": "用例6: DuckDuckGo Bot",
+    "header": {"User-Agent":"duckduckgo","X-REAL-IP":"2.16.56.5"}
+  },
+    {
+    "title": "用例7: Yandex",
+    "header": {"User-Agent":"Yandex","X-REAL-IP":"27.128.0.5"}
+  },
+    {
+    "title": "用例8: fastbot",
+    "header": {"User-Agent":"fastbot","X-REAL-IP":"1.71.0.5"}
+  }
+
+]

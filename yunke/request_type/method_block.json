@@ -1,0 +1,461 @@
+[
+  {
+    "title": "用例1: ACL请求",
+    "method": "ACL",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例2: BCOPY请求",
+    "method": "BCOPY",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例3: BDELETE请求",
+    "method": "BDELETE",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例4: BMOVE请求",
+    "method": "BMOVE",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例5: BPROPFIND请求",
+    "method": "BPROPFIND",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例6: BPROPPATCH请求",
+    "method": "BPROPPATCH",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例7: CHECKIN请求",
+    "method": "CHECKIN",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例8: CHECKOUT请求",
+    "method": "CHECKOUT",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例9: CONNECT请求",
+    "method": "CONNECT",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例10: COPY请求",
+    "method": "COPY",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例11: DELETE请求",
+    "method": "DELETE",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例12: GET请求",
+    "method": "GET",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例13: HEAD请求",
+    "method": "HEAD",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例14: LINK请求",
+    "method": "LINK",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例15: LOCK请求",
+    "method": "LOCK",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例16: MERGE请求",
+    "method": "MERGE",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例17: MKCOL请求",
+    "method": "MKCOLL",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例18: MKWORKSPACE请求",
+    "method": "MKWORKSPACE",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例19: MOVE请求",
+    "method": "MOVE",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例20: NOTIFY请求",
+    "method": "NOTIFY",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例21: OPTIONS请求",
+    "method": "OPTIONS",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例22: PATCH请求",
+    "method": "PATCH",
+    "expect": 405,
+    "type": 1
+  },
+  {
+    "title": "用例23: POLL请求",
+    "method": "POLL",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例24: POST请求",
+    "method": "POST",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例25: PROPPATCH请求",
+    "method": "PROPPATCH",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例26: PUT请求",
+    "method": "PUT",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例27: REPORT请求",
+    "method": "REPORT",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例28: RPC_IN_DATA请求",
+    "method": "RPC_IN_DATA",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例29: RPC_OUT_DATA请求",
+    "method": "RPC_OUT_DATA",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例30: SEARCH请求",
+    "method": "SEARCH",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例31: SUBSCRIBE请求",
+    "method": "SUBSCRIBE",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例32: TRACE请求",
+    "method": "TRACE",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例33: TRACK请求",
+    "method": "TRACK",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例34: UNLINK请求",
+    "method": "UNLINK",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例35: UNLOCK请求",
+    "method": "UNLOCK",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例36: UNSUBSCRIBE请求",
+    "method": "UNSUBSCRIBE",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例37: VERSION_CONTROL请求",
+    "method": "PATCH",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例38: X-MS-ENUMATTS请求",
+    "method": "X-MS-ENUMATTS",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例39: 规则之外的请求：OPEN",
+    "method": "OPEN",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例40: 规则之外的请求：SQL",
+    "method": "SQL",
+    "expect": 405,
+    "type": 1
+  },{
+    "title": "用例41: 规则之外的请求：XSS",
+    "method": "XSS",
+    "expect": 405,
+    "type": 1
+  },
+    {
+    "title": "用例42: ACL请求",
+    "method": "ACL",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例43: BCOPY请求",
+    "method": "BCOPY",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例44: BDELETE请求",
+    "method": "BDELETE",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例45: BMOVE请求",
+    "method": "BMOVE",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例46: BPROPFIND请求",
+    "method": "BPROPFIND",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例47: BPROPPATCH请求",
+    "method": "BPROPPATCH",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例48: CHECKIN请求",
+    "method": "CHECKIN",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例49: CHECKOUT请求",
+    "method": "CHECKOUT",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例50: CONNECT请求",
+    "method": "CONNECT",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例51: COPY请求",
+    "method": "COPY",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例52: DELETE请求",
+    "method": "DELETE",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例53: GET请求",
+    "method": "GET",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例54: HEAD请求",
+    "method": "HEAD",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例55: LINK请求",
+    "method": "LINK",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例56: LOCK请求",
+    "method": "LOCK",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例57: MERGE请求",
+    "method": "MERGE",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例58: MKCOL请求",
+    "method": "MKCOL",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例59: MKWORKSPACE请求",
+    "method": "MKWORKSPACE",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例60: MOVE请求",
+    "method": "MOVE",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例61: NOTIFY请求",
+    "method": "NOTIFY",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例62: OPTIONS请求",
+    "method": "OPTIONS",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例63: PATCH请求",
+    "method": "PATCH",
+    "expect": 200,
+    "type": 2
+  },
+  {
+    "title": "用例64: POLL请求",
+    "method": "POLL",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例65: POST请求",
+    "method": "POST",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例66: PROPPATCH请求",
+    "method": "PROPPATCH",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例67: PUT请求",
+    "method": "PUT",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例68: REPORT请求",
+    "method": "REPORT",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例69: RPC_IN_DATA请求",
+    "method": "RPC_IN_DATA",
+    "expect": 200
+  },{
+    "title": "用例70: RPC_OUT_DATA请求",
+    "method": "RPC_OUT_DATA",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例71: SEARCH请求",
+    "method": "SEARCH",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例72: SUBSCRIBE请求",
+    "method": "SUBSCRIBE",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例73: TRACE请求",
+    "method": "TRACE",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例74: TRACK请求",
+    "method": "TRACK",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例75: UNLINK请求",
+    "method": "UNLINK",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例76: UNLOCK请求",
+    "method": "UNLOCK",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例77: UNSUBSCRIBE请求",
+    "method": "UNSUBSCRIBE",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例78: VERSION_CONTROL请求",
+    "method": "PATCH",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例79: X-MS-ENUMATTS请求",
+    "method": "X-MS-ENUMATTS",
+    "expect": 200,
+    "type": 2
+  },{
+    "title": "用例80: 规则之外的请求：OPEN",
+    "method": "OPEN",
+    "expect": 405,
+    "type": 2
+  },{
+    "title": "用例81: 规则之外的请求：SQL",
+    "method": "SQL",
+    "expect": 405,
+    "type": 2
+  },{
+    "title": "用例82: 规则之外的请求：XSS",
+    "method": "XSS",
+    "expect": 405,
+    "type": 2
+  },{
+    "title": "用例83: 关闭规则后请求：GET",
+    "method": "GET",
+    "expect": 200,
+    "type": 3
+  },{
+    "title": "用例84: 重复开启规则后请求：GET",
+    "method": "GET",
+    "expect": 405,
+    "type": 4
+  }
+]
